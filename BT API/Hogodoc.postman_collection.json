@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "dfb5bdb3-6688-49b9-b87c-6b50a44ca505",
+		"name": "Hogodoc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26535853"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "EmailAddress",
+							"value": "thd4777@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "e10adc3949ba59abbe56e057f20f883e",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}HoGo/api/v1/Login"
+			},
+			"response": []
+		},
+		{
+			"name": "GetDocumentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "SessionID",
+							"value": "e4eba1e384cf4a87a31e67ed3a5745ec",
+							"type": "text"
+						},
+						{
+							"key": "SortType",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}HoGo/api/v1/GetDocumentList "
+			},
+			"response": []
+		},
+		{
+			"name": "GetDocumentListDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "SessionID",
+							"value": "589c5b8d9d954483850469108f53bfc6",
+							"type": "text"
+						},
+						{
+							"key": "DisplayLength",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "DisplayStart",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "sEcho",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "SearchString",
+							"value": "a",
+							"type": "text"
+						},
+						{
+							"key": "SortType",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "{{url}}HoGo/api/v1/GetDocumentListDetail"
+			},
+			"response": []
+		},
+		{
+			"name": "GetDocumentDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "DocumentID",
+							"value": "00bef2b909e842e2968285207b2fc5fe",
+							"type": "text"
+						},
+						{
+							"key": "SessionID",
+							"value": "38debcc79aa3448db2d2391308768ab7",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}HoGo/api/v1/GetDocumentDetail"
+			},
+			"response": []
+		}
+	]
+}
